@@ -8,6 +8,8 @@ const app = express()
 app.use(cors())
 app.get(weatherRoute, weatherHandler)
 
-app.listen(port, () => {
-  console.log(`Server listening on port ${port}`)
-})
+export const startServer = () => {
+  app.listen(port, () => {
+    console.log(`Server listening on port ${port}`)
+  })
+}

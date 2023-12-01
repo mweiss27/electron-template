@@ -5,9 +5,7 @@
   "description": "Electron template",
   "main": ".vite/build/main.js",
   "scripts": {
-    "start": "run-p start:client start:server",
-    "start:client": "electron-forge start",
-    "start:server": "nodemon --exec babel-node src/server/index.js",
+    "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish"
