@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom"
+import { createHashRouter } from "react-router-dom"
 import { HomePage } from "./pages/home"
 
 const homePageRoute = {
@@ -6,4 +6,4 @@ const homePageRoute = {
   element: <HomePage />,
 }
 
-export const router = createBrowserRouter([homePageRoute])
+export const router = createHashRouter([homePageRoute])
